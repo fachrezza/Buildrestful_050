@@ -33,12 +33,14 @@ public class ProductServiceController {
         Product honey = new Product(); //mendeklarasikan class ke object
         honey.setId("1");
         honey.setNama("Honey");
+        honey.setPrice(10000);
+        honey.setDisc(10);
         productRepo.put(honey.getId(), honey); //memanggil id dan product
         
-        Product almond = new Product();//mendeklarasikan class ke object
-        almond.setId("2");
-        almond.setNama("Almond");
-        productRepo.put(almond.getId(), almond);//memanggil id dan product
+//        Product almond = new Product();//mendeklarasikan class ke object
+//        almond.setId("2");
+//        almond.setNama("Almond");
+//        productRepo.put(almond.getId(), almond);//memanggil id dan product
     }
     
     //request mapping digunakan untuk menentukan Request URI untuk mengakses REST Endpoints
